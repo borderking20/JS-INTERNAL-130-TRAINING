@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h3>Student Registration</h3>
+
+        <form id="regForm">
+            <input type="text" id="name" placeholder="Name">
+
+            <input type="email" id="email" placeholder="Email">
+
+            <div class="gender">
+                <label><input type="radio" name="gender" value="Male"> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+            </div>
+
+            <select id="course">
+                <option value="">Select Course</option>
+                <option value="Java">Java</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+            </select>
+
+            <label class="terms">
+                <input type="checkbox" id="terms"> I agree to Terms & Conditions
+            </label>
+
+            <button type="submit">Submit</button>
+
+            <div class="error" id="error"></div>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
